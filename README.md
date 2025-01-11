@@ -17,8 +17,8 @@ This project provides a background job that fetches the latest cryptocurrency da
 
 ### **Step 1: Clone the repository**
 ```bash
-git clone https://github.com/yourusername/crypto-data-fetcher.git
-cd crypto-data-fetcher
+git clone https://github.com/yourusername/KOINEX_BACKEND.git
+cd KOINEX_BACKEND
 ```
 
 ### **Step 2: Install Dependencies**
