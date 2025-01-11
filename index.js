@@ -3,12 +3,15 @@ dotenv.config({ path: './api_key.env' });
 const express = require('express');
 const connectDB = require('./config/db');
 const startCryptoJob = require('./jobs/cryptoJob');
+const cryptoStatsRouter = require('./routes/cryptoStats');
 
 const app = express();
 
 connectDB();
 
 startCryptoJob();
+
+app.use('/stats', cryptoStatsRouter);
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
